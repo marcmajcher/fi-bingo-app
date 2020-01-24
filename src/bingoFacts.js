@@ -1,6 +1,6 @@
 export default [
   'Find the instructor who competed in guitar hero tournaments',
-  'Find the instructor who is an award-winning actor/producer/director',
+  'Find the instructor who is an award-winning actor/director',
   'Find the instructor who is a huge coffee nerd',
   'Find someone who has lived in more than 3 states',
   'Find someone who has lived abroad',
@@ -16,6 +16,7 @@ export default [
   'Find out someone’s favorite sport',
   'Find someone who wears contact lenses',
   'Find out someone\'s favorite movie',
+  'Find someone who has seen a wild bear or moose',
   'Find someone who doesn\'t eat meat',
   'Find someone who has traveled to more than ten states',
   'Find out what someone did over the weekend',
