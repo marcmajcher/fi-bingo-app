@@ -5,22 +5,37 @@
   padding: 24px 0;
 }
 
+h1 {
+  font-size: 4em;
+}
+
 .controls {
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-.bingo-grid {
+.bingo {
   margin-left: auto;
   margin-right: auto;
   width: 800px;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
   grid-gap: 0;
   justify-items: center;
   border: 2px solid black;
+}
+.bingo-grid {
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+li.free {  
+  font-size: 4em;
+}
+
+.bingo-header {
+  height: 1.5em;
+  font-size: 5em;
+  align-items: center;
 }
 
 .fact {

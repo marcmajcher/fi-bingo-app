@@ -10,7 +10,8 @@ export default class App extends Component {
     this.state = {
       currentFacts: [],
       facts,
-      freeCenter: true,
+      freeCenter: false,
+      showBingo: true,
       showSettings: false,
       title: 'Welcome to Flatiron',
     };
@@ -35,23 +36,53 @@ export default class App extends Component {
     this.getNewFacts();
   }
 
+  handleSettingsChange = (key, value) => {
+    this.setState({ [key]: value });
+  };
+
+  toggleSettings = () => {
+    this.setState({ showSettings: !this.state.showSettings });
+  };
+
   render() {
     return (
       <div className="App">
         <nav>
           <h1>{this.state.title}</h1>
-          <section class="controls">
+          <section className="controls">
             <ion-icon
               size="small"
               name="refresh"
               onClick={() => this.getNewFacts()}
             ></ion-icon>
-            <ion-icon size="small" name="settings"></ion-icon>
+            <ion-icon
+              size="small"
+              name="settings"
+              onClick={this.toggleSettings}
+            ></ion-icon>
           </section>
         </nav>
+        {this.state.showSettings ? (
+          <Settings
+            handleSettingsChange={this.handleSettingsChange}
+            freeCenter={this.state.freeCenter}
+            showBingo={this.state.showBingo}
+            title={this.state.title}
+          />
+        ) : (
+          ''
+        )}
 
-        <BingoGrid facts={this.state.currentFacts} />
-        {this.state.showSettings ? <Settings /> : ''}
+        {this.state.showSettings ? (
+          ''
+        ) : (
+          <BingoGrid
+            bingo={this.state.showBingo}
+            facts={this.state.currentFacts}
+            freeCenter={this.state.freeCenter}
+            title={this.state.title}
+          />
+        )}
       </div>
     );
   }
