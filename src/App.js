@@ -10,7 +10,7 @@ export default class App extends Component {
     this.state = {
       currentFacts: [],
       facts,
-      freeCenter: false,
+      center: 'selfie',
       showBingo: true,
       showSettings: false,
       title: 'Welcome to Flatiron',
@@ -73,7 +73,7 @@ export default class App extends Component {
         {this.state.showSettings ? (
           <Settings
             handleSettingsChange={this.handleSettingsChange}
-            freeCenter={this.state.freeCenter}
+            center={this.state.center}
             showBingo={this.state.showBingo}
             title={this.state.title}
             facts={this.state.facts}
@@ -89,7 +89,7 @@ export default class App extends Component {
           <BingoGrid
             bingo={this.state.showBingo}
             facts={this.state.currentFacts}
-            freeCenter={this.state.freeCenter}
+            center={this.state.center}
             title={this.state.title}
           />
         )}

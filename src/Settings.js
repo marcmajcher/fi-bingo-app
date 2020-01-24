@@ -4,10 +4,10 @@ export default class Settings extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      freeCenter: props.freeCenter,
+      center: props.center,
+      currentFacts: props.facts,
       showBingo: props.showBingo,
       title: props.title,
-      currentFacts: props.facts,
     };
   }
 
@@ -23,6 +23,10 @@ export default class Settings extends Component {
   handleFactsChange = e => {
     this.setState({ currentFacts: e.target.value.split('\n') });
   };
+
+  handleCenterChange = e => {
+    this.props.handleSettingsChange(e.target.name, e.target.value)
+  }
 
   updateFacts = e => {
     this.props.updateFacts(this.state.currentFacts);
@@ -41,6 +45,15 @@ export default class Settings extends Component {
                 value={this.state.title}
               ></input>
             </div>
+            <select
+              name="center"
+              value={this.props.center}
+              onChange={this.handleCenterChange}
+            >
+              <option value="normal">Normal</option>
+              <option value="free">Free</option>
+              <option value="selfie">Selfie</option>
+            </select>
             <input
               name="freeCenter"
               type="checkbox"
