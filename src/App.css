@@ -1,38 +1,39 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
   align-items: center;
+  /* justify-content: center; */
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.bingo-grid {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-gap: 0;
+  justify-items: center;
+  border: 2px solid black;
+}
+
+.fact {
+  display: flex;
+  list-style-type: none;
+  border: 1px solid black;
+  width: 140px;
+  height: 140px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.2em;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media print {
+  nav,
+  .settings {
+    display: none;
   }
 }
