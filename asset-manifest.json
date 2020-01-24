@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/fi-bingo-app/static/css/main.1e0936f9.chunk.css",
-    "main.js": "/fi-bingo-app/static/js/main.c2f0f0e6.chunk.js",
-    "main.js.map": "/fi-bingo-app/static/js/main.c2f0f0e6.chunk.js.map",
+    "main.js": "/fi-bingo-app/static/js/main.1f6e0076.chunk.js",
+    "main.js.map": "/fi-bingo-app/static/js/main.1f6e0076.chunk.js.map",
     "runtime-main.js": "/fi-bingo-app/static/js/runtime-main.9aad2de6.js",
     "runtime-main.js.map": "/fi-bingo-app/static/js/runtime-main.9aad2de6.js.map",
     "static/js/2.52858606.chunk.js": "/fi-bingo-app/static/js/2.52858606.chunk.js",
     "static/js/2.52858606.chunk.js.map": "/fi-bingo-app/static/js/2.52858606.chunk.js.map",
     "index.html": "/fi-bingo-app/index.html",
-    "precache-manifest.a2e4388f3cfdfde745ca9f1e2be5c426.js": "/fi-bingo-app/precache-manifest.a2e4388f3cfdfde745ca9f1e2be5c426.js",
+    "precache-manifest.56dc78601ba5e78030cdf045cfb71eab.js": "/fi-bingo-app/precache-manifest.56dc78601ba5e78030cdf045cfb71eab.js",
     "service-worker.js": "/fi-bingo-app/service-worker.js",
     "static/css/main.1e0936f9.chunk.css.map": "/fi-bingo-app/static/css/main.1e0936f9.chunk.css.map",
     "static/js/2.52858606.chunk.js.LICENSE": "/fi-bingo-app/static/js/2.52858606.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.9aad2de6.js",
     "static/js/2.52858606.chunk.js",
     "static/css/main.1e0936f9.chunk.css",
-    "static/js/main.c2f0f0e6.chunk.js"
+    "static/js/main.1f6e0076.chunk.js"
   ]
 }

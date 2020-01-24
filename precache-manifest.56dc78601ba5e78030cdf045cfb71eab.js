@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0e0d858065827994790f21a2ed108a55",
+    "revision": "875aab1656f2a89b97fc061858d5dc17",
     "url": "/fi-bingo-app/index.html"
   },
   {
-    "revision": "88ab6cc7a043e49e2ebc",
+    "revision": "5a07e808b04ae4cfa6b1",
     "url": "/fi-bingo-app/static/css/main.1e0936f9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fi-bingo-app/static/js/2.52858606.chunk.js.LICENSE"
   },
   {
-    "revision": "88ab6cc7a043e49e2ebc",
-    "url": "/fi-bingo-app/static/js/main.c2f0f0e6.chunk.js"
+    "revision": "5a07e808b04ae4cfa6b1",
+    "url": "/fi-bingo-app/static/js/main.1f6e0076.chunk.js"
   },
   {
     "revision": "c6b674e3c21097edaed8",
