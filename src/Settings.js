@@ -25,8 +25,8 @@ export default class Settings extends Component {
   };
 
   handleCenterChange = e => {
-    this.props.handleSettingsChange(e.target.name, e.target.value)
-  }
+    this.props.handleSettingsChange(e.target.name, e.target.value);
+  };
 
   updateFacts = e => {
     this.props.updateFacts(this.state.currentFacts);
@@ -45,6 +45,7 @@ export default class Settings extends Component {
                 value={this.state.title}
               ></input>
             </div>
+            What's in the center?{' '}
             <select
               name="center"
               value={this.props.center}
@@ -54,13 +55,6 @@ export default class Settings extends Component {
               <option value="free">Free</option>
               <option value="selfie">Selfie</option>
             </select>
-            <input
-              name="freeCenter"
-              type="checkbox"
-              onChange={this.handleCheckChange}
-              checked={this.props.freeCenter}
-            />{' '}
-            Free Center?
           </div>
           <div>
             <input
@@ -69,7 +63,7 @@ export default class Settings extends Component {
               onChange={this.handleCheckChange}
               checked={this.props.showBingo}
             />{' '}
-            Show Bingo?
+            Show "BINGO"?
           </div>
           <div>
             <textarea
