@@ -40,6 +40,10 @@ export default class App extends Component {
     this.setState({ [key]: value });
   };
 
+  updateFacts = facts => {
+    this.setState({ facts }, () => this.getNewFacts());
+  };
+
   toggleSettings = () => {
     this.setState({ showSettings: !this.state.showSettings });
   };
@@ -50,11 +54,15 @@ export default class App extends Component {
         <nav>
           <h1>{this.state.title}</h1>
           <section className="controls">
-            <ion-icon
-              size="small"
-              name="refresh"
-              onClick={() => this.getNewFacts()}
-            ></ion-icon>
+            {this.state.showSettings ? (
+              ''
+            ) : (
+              <ion-icon
+                size="small"
+                name="refresh"
+                onClick={() => this.getNewFacts()}
+              ></ion-icon>
+            )}
             <ion-icon
               size="small"
               name="settings"
@@ -68,6 +76,8 @@ export default class App extends Component {
             freeCenter={this.state.freeCenter}
             showBingo={this.state.showBingo}
             title={this.state.title}
+            facts={this.state.facts}
+            updateFacts={this.updateFacts}
           />
         ) : (
           ''

@@ -51,14 +51,23 @@ li.free {
   margin: 0;
 }
 
+ion-icon {
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.settings {
+  font-size: 1.6em;
+}
+
+.facts-editor {
+  width: 80%;
+  height: 200px;
+}
+
 @media print {
   nav,
   .settings {
     display: none;
   }
-}
-
-ion-icon {
-  margin-left: 4px;
-  cursor: pointer;
 }
