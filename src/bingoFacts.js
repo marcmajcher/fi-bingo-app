@@ -2,7 +2,7 @@ export default [
   'Find the instructor who competed in guitar hero tournaments',
   'Find the instructor who is an award-winning actor/director',
   'Find the instructor who is a huge coffee nerd',
-  'Find someone who has lived in more than 3 states',
+  'Find someone who has lived in more than three states',
   'Find someone who has lived abroad',
   'Find someone who loves working out',
   'Find someone who has more than one pet',
